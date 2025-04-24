@@ -1,0 +1,17 @@
+name: Deploy Static Website
+
+on:
+  push:
+    branches: [main] # or your main branch
+ 
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Check the directory
+        uses: pwd
+
+      
